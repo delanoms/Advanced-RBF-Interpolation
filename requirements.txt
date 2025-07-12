@@ -1,0 +1,14 @@
+# Dependências do plugin Advanced RBF Interpolation
+# Estas dependências já estão incluídas na instalação padrão do QGIS
+
+# Dependências principais
+numpy>=1.19.0
+scipy>=1.5.0
+
+# Dependências do QGIS (já incluídas)
+# qgis>=3.0.0
+# PyQt5>=5.15.0
+
+# Dependências para desenvolvimento (opcional)
+# pytest>=6.0.0
+# pylint>=2.0.0 

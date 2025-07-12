@@ -1,0 +1,47 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Advanced RBF Interpolation
+qgisMinimumVersion=3.0
+description=Advanced RBF interpolation with neighborhood control, local interpolation, and extrapolation options for large datasets
+version=1.0.0
+author=Delano M. Santos
+email=projetos.delano@gmail.com
+
+about=This plugin provides advanced Radial Basis Function (RBF) interpolation capabilities with enhanced control over neighborhood selection and extrapolation methods. Features include: local interpolation for large datasets, maximum neighbor control, search radius definition, multiple extrapolation methods (constant, nearest neighbor, linear), optimization for performance, and support for various RBF functions (thin plate, multiquadric, gaussian, etc.). Dependencies: NumPy, SciPy (included in QGIS installation). The plugin is designed for scientific and engineering applications requiring high-quality spatial interpolation.
+
+tracker=https://github.com/delanoms/Advanced-RBF-Interpolation/issues
+repository=https://github.com/delanoms/Advanced-RBF-Interpolation
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=yes
+# Uncomment the following line and add your changelog:
+changelog=CHANGELOG.md
+
+# Tags are comma separated with spaces allowed
+tags=python,interpolation,rbf,spatial-analysis
+
+homepage=https://github.com/delanoms/Advanced-RBF-Interpolation
+category=Analysis
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+
