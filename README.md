@@ -49,13 +49,51 @@ Este plugin para QGIS realiza interpolação avançada por **Função de Base Ra
   - **Interpolação linear**: Tenta interpolar linearmente áreas sem dados
 - **Valor para extrapolação constante**: Valor a ser usado no método "constante"
 
+## Instalação
+
+### ⚠️ Instalação Manual (Requerida)
+
+Este plugin **não está disponível** no repositório oficial do QGIS e requer instalação manual:
+
+#### 1. Download do Plugin
+
+- **Clone** o repositório: `git clone https://github.com/delanoms/Advanced-RBF-Interpolation.git`
+- Ou **baixe** o ZIP do GitHub e extraia os arquivos
+
+#### 2. Instalação no QGIS
+
+Copie a pasta do plugin para o diretório de plugins do QGIS:
+
+**Windows:**
+
+```
+C:\Users\[SEU_USUARIO]\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\advanced_rbf_interpolation
+```
+
+**Linux:**
+
+```
+~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/advanced_rbf_interpolation
+```
+
+**macOS:**
+
+```
+~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/advanced_rbf_interpolation
+```
+
+#### 3. Ativação do Plugin
+
+1. **Reinicie** o QGIS
+2. Acesse **Plugins** → **Gerenciar e Instalar Plugins**
+3. Na aba **Instalados**, procure por **"Advanced RBF Interpolation"**
+4. **Ative** o plugin marcando a caixa de seleção
+
 ## Como Usar
 
-1. **Instale** o plugin na pasta de plugins do QGIS
-2. **Ative** o plugin no gerenciador de plugins do QGIS
-3. **Acesse** o algoritmo "Interpolação RBF Avançada" no menu de Processamento
-4. **Configure** os parâmetros conforme suas necessidades
-5. **Execute** o algoritmo e visualize o raster gerado
+1. **Acesse** o algoritmo "Interpolação RBF Avançada" no menu **Processamento** → **Caixa de Ferramentas**
+2. **Configure** os parâmetros conforme suas necessidades
+3. **Execute** o algoritmo e visualize o raster gerado
 
 ## Exemplos Visuais
 
@@ -146,6 +184,27 @@ _Os perfis de corte mostram a continuidade e suavidade da superfície interpolad
 - **QGIS 3.x** ou superior
 - **NumPy** e **SciPy** (já inclusos na instalação padrão do QGIS)
 - **GDAL** (já incluso na instalação padrão do QGIS)
+
+## Troubleshooting
+
+### Problemas Comuns
+
+**Plugin não aparece na lista de plugins instalados:**
+
+- Verifique se a pasta foi copiada corretamente para o diretório de plugins
+- Certifique-se de que a pasta contém o arquivo `__init__.py`
+- Reinicie o QGIS completamente
+
+**Erro ao executar o algoritmo:**
+
+- Verifique se NumPy e SciPy estão instalados
+- Confirme que a camada de entrada é válida e contém dados
+- Verifique se o campo de valor é numérico
+
+**Problemas de permissão (Linux/macOS):**
+
+- Certifique-se de que o diretório de plugins tem permissões de leitura
+- Use `chmod 755` no diretório do plugin se necessário
 
 ## Suporte
 
